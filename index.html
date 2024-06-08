@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X.com/Home</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="bg-black text-white">
+
+    <div class="flex md:container mx-auto">
+        <div class="first w-16 md:w-[65%]">
+            <div class="sidebar flex ml-3 md:items-end flex-col bg-[#16181c] rounded-xl mr-3 mt-4 sticky top-3">
+                <div class="logo invert my-2 self-start ml-3 md:ml-28">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+
+                <ul class="flex flex-col text-sm space-y-0.5 md:px-11 font-bold">
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined"> home</span><span class="hidden md:block">Home</span>
+                    </li>
+
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span><span class="hidden md:block">Explore</span>
+                    </li>
+
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            notifications
+                        </span><span class="hidden md:block">Notifications</span>
+                    </li>
+
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            message
+                        </span><span class="hidden md:block">Messages</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-3">
+                        <span class="material-symbols-outlined">
+                            note
+                        </span><span class="hidden md:block">Grok</span>
+                    </li>
+
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            list_alt
+                        </span><span class="hidden md:block">List</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            bookmark
+                        </span><span class="hidden md:block">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            group
+                        </span><span class="hidden md:block">Communities</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            workspace_premium
+                        </span><span class="hidden md:block">Premium</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            person
+                        </span><span class="hidden md:block">Profile</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center justify-center gap-3 md:w-fit hover:bg-gray-800 hover:rounded-full hover:cursor-pointer px-5 py-2">
+                        <span class="material-symbols-outlined">
+                            more
+                        </span><span class="hidden md:block">More</span>
+                    </li>
+
+                    <li>
+                        <div class="button w-full text-center my-2">
+                            <button
+                                class="hidden md:block bg-blue-500 text-white px-16 py-1 text-xl rounded-full">Post</button>
+                            <button class="md:hidden bg-blue-400 text-white px-0.5 py-0 text-xs rounded-full">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+                    </li>
+                </ul>
+                <div class="userprofile mt-3 mb-9 justify-end mx-2 hidden md:flex">
+                    <div
+                        class="item px-4 flex items-center gap-5 justify-center mx-5 hover:bg-gray-800 cursor-pointer rounded-full w-fit">
+                        <div class="p1">
+                            <img class="w-8" src="/src/img/icon.ico" alt="">
+                        </div>
+                        <div class="p2">
+                            <div class="text-sm">Zaheer Khan</div>
+                            <div class="text-gray-500 text-[11px]">@zaheerk</div>
+                        </div>
+                        <div class="p3">
+                            •••
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="second w-full border-[1px] border-x-gray-700 border-y-black">
+            <div class="top flex p-2 sticky top-0 bg-black backdrop-blur-3xl opacity-80 hover:bg-gray-950">
+                <div class="absolute w-16 h-1 rounded-full bg-blue-700 bottom-0 left-[17%]"></div>
+                <div class="left  w-1/2 flex justify-center font-bold text-lg">For You</div>
+                <div class="right w-1/2 flex justify-center font-bold text-lg">Following</div>
+                <div class="settings mx-2"><span class="material-symbols-outlined">
+                        settings
+                    </span></div>
+            </div>
+            <div class="h-[1px] bg-gray-700 w-full"></div>
+            <div class="whatishapp flex gap-2">
+                <div class="img m-3">
+                    <img class="w-12" src="/src/img/icon.ico" alt="">
+                </div>
+                <div class="w-full">
+                    <input class="w-full bg-black text-gray-400 text-xl h-7 my-4 outline-none" type="text"
+                        placeholder="What is Happening?!">
+                    <div class="text-blue-400 flex items-center gap-2">
+                        <span class="material-symbols-outlined text-xl">
+                            globe_asia
+                        </span>
+                        <span class="font-bold">Everyone can reply</span>
+                    </div>
+                    <div class="h-[1px] bg-gray-700 w-[85%] my-3"></div>
+                    <div class="flex justify-between my-2">
+                        <div class="blueicons flex gap-2 text-blue-300 items-center">
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                gif_box
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                calendar_month
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-xl">
+                                pin_drop
+                            </span>
+
+                        </div>
+                        <div class="postbtn">
+                            <button
+                                class="bg-blue-400 text-white font-bold mx-8 px-3 py-0.5 text-sm rounded-full">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-[1px] bg-gray-700 w-full"></div>
+
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-12" src="/src/img/icon.ico" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Zaheer khan</span>
+                            <span class="text-gray-500"> @Zaheerk • 1h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#AllEyesOnRafah</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <img class="rounded-xl" src="/src/img/AllEyesOnRafah.webp" alt="">
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 246k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 6.12M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 3M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 786k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 2M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-12" src="/src/img/icon.ico" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Zaheer khan</span>
+                            <span class="text-gray-500"> @Zaheerk • 2h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#SupportPalestine</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <h2>#I believe the land of Palestine will be returned to owners of the land with the
+                                    help of Allah.</h2>
+                                <h2>Inshallah ❤️</h2>
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 46k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 1.2M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 990k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 340k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 1M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-14 h-8 rounded-full" src="/src/img/salman khan.jpg" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Salman khan</span>
+                            <span class="text-gray-500"> @SalmanKhan • 4h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#IStandWithPalestine</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <img class="rounded-xl" src="/src/img/Flag pale.webp" alt="">
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 302k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 1.12M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 7M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 4.1M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 12M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-48 h-8 rounded-full" src="/src/img/shah.jpg" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Shah Rukh
+                                Khan</span>
+                            <span class="text-gray-500"> @ImSRK • 7h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#JavanTeaserOutNow</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <video class="rounded-xl" src="/src/img/Poster.mp4" controls autoPlay muted></video>
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 700k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 16.12M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 3M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 18.9M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 2M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-12 rounded-full" src="/src/img/shah.jpg" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Shah Rukh
+                                Khan</span>
+                            <span class="text-gray-500"> @ImSRK • 12h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#ReadyToWatchJavan</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <img class="rounded-xl" src="/src//img/jawaan.webp" alt="">
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 300k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 1.12M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 2M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 2.7M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 509k
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-24 h-8 rounded-full" src="/src/img/Mark.jpg" alt="Post_Image">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer text-white">Mark
+                                Zuckerberg</span>
+                            <span class="text-gray-500"> @MarkZZ • 18h</span>
+                            <div class="text-blue-600 hover:underline mt-2">#FacbookUpdates</div>
+                            <div class="postimg m-4 ml-0 mt-0">
+                                <img class="rounded-xl" src="/src/img/facebook.jpg" alt="">
+                            </div>
+                            <div class="icons flex justify-between mr-3 text-gray-600">
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        quick_phrases
+                                    </span> 246k
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-green-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        repeat
+                                    </span> 6.12M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-pink-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        favorite
+                                    </span> 3M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-blue-600 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        bar_chart
+                                    </span> 3M
+                                </div>
+                                <div
+                                    class="icon flex items-center justify-center hover:text-purple-400 hover:bg-black hover:rounded-full hover:cursor-pointer transition ease-in-out delay-150">
+                                    <span class="material-symbols-outlined cursor-pointer text-xl mr-0.5">
+                                        upload
+                                    </span> 2M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+            </div>
+
+        </div>
+
+        <div class="third w-full hidden md:block ">
+            <div class="search m-3 mt-3">
+                <input type="text" placeholder="Search" class="w-[70%] rounded-full bg-[#16181c] text-white px-4 py-1">
+            </div>
+            <div class="whats sticky top-0 m-3 bg-[#16181c] w-2/3 py-5 rounded-xl space-y-3">
+                <h1 class="text-xl font-bold px-3">Whats Happening</h1>
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer px-3">
+                    <div class="text-sm text-gray-500">Trending in India</div>
+                    <div class="font-bold ">#AllEyesOnRafah</div>
+                    <div class="text-sm text-gray-500">47.60M Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer px-3">
+                    <div class="text-sm text-gray-500">Trending in India</div>
+                    <div class="font-bold ">#Palestine</div>
+                    <div class="text-sm text-gray-500">17.10M Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer px-3">
+                    <div class="text-sm text-gray-500">Trending in India</div>
+                    <div class="font-bold ">#Gaza</div>
+                    <div class="text-sm text-gray-500">4.87M Posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-gray-800 hover:cursor-pointer px-3">
+                    <div class="text-sm text-gray-500">Trending in India</div>
+                    <div class="font-bold ">#India</div>
+                    <div class="text-sm text-gray-500">120.29k Posts</div>
+                </div>
+            </div>
+
+            <div class="whom sticky top-[70vh] m-3 bg-[#16181c] w-2/3 py-5 rounded-xl space-y-2">
+                <h1 class="text-xl font-bold px-3">Whom to Follow</h1>
+
+                <div class="item p-3 flex items-center gap-2 justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12" src="/src/img/icon.ico" alt="">
+                        </div>
+                        <div class="p2">
+                            <div>Zaheer Khan</div>
+                            <div class="text-gray-500">@zaheerk</div>
+                        </div>
+                    </div>
+                    <div class="p3 ">
+                        <button class=" bg-white text-black rounded-full px-3 py-0.5">Follow</button>
+                    </div>
+                </div>
+                <div class="item p-3 flex items-center gap-2 justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12 h-12 rounded-full" src="/src/img/tata.jpg" alt="">
+                        </div>
+                        <div class="p2">
+                            <div>Ratan Tata</div>
+                            <div class="text-gray-500">@RTata</div>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <button class="bg-white text-black rounded-full px-3 py-0.5">Follow</button>
+                    </div>
+                </div>
+                <div class="item p-3 flex items-center gap-2 justify-between hover:bg-gray-800 cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12 rounded-full" src="/src/img/bill.webp" alt="">
+                        </div>
+                        <div class="p2">
+                            <div>Bill Gates</div>
+                            <div class="text-gray-500">@BillGates</div>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <button class="bg-white text-black rounded-full px-3 py-0.5">Follow</button>
+                    </div>
+                </div>
+
+                <div class="text-blue-800 m-3 hover:underline hover:cursor-pointer">Show More</div>
+
+                <div class="h-[1px] bg-gray-700 w-full"></div>
+
+                <div class="terms text-gray-400 text-sm mx-5 ">
+                    <span class="hover:underline cursor-pointer px-0.5">Terms & service</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Privacy Policy</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Premium</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Global</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Accessibility</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Ads info</span>
+                    <span class="hover:underline cursor-pointer px-0.5">Know More</span>
+                    <div class="hover:underline cursor-pointer text-center mt-4">&copy; 2024 X Corp | Zaheer Khan </div>
+                </div>
+
+            </div>
+        </div>
+</body>
+
+</html>
